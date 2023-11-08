@@ -3,9 +3,9 @@
 example for andi :)
 
 1. Set up [`./src/pages/api-doc.tsx`](./src/pages/api-doc.tsx)
-  1. make sure you have `apiFolder: 'src/pages/api'`
+   1. make sure you have `apiFolder: 'src/pages/api'`
 2. Set up [`./src/pages/api/doc.ts`](./src/pages/api/doc.ts)
-  1. make sure you have `apiFolder: 'src/pages/api'`
+   1. make sure you have `apiFolder: 'src/pages/api'`
 3. Write your jsdoc swagger like in [`./src/pages/api/hello.ts`](./src/pages/api/hello.ts)
 4. I just threw in some other swagger dark mode css stuff in [`./src/styles/swagger-dark.css`](./src/styles/swagger-dark.css) and imported in [`./src/pages/_app.tsx`](./src/pages/_app.tsx) but who cares (also idk how css in next works and dont care to google)
 
