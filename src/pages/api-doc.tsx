@@ -4,7 +4,13 @@ import dynamic from 'next/dynamic'
 
 const SwaggerUI = dynamic<{
   spec: any
-}>(import('swagger-ui-react'), { ssr: false })
+}>(
+  // @ts-expect-error
+  import('swagger-ui-react'),
+  {
+    ssr: false,
+  }
+)
 
 function ApiDoc({ spec }: InferGetStaticPropsType<typeof getStaticProps>) {
   return <SwaggerUI spec={spec} />
